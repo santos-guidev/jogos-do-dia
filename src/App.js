@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
+import React, { useState } from 'react';
+import GameList from './components/GameList';
+import GameLoader from './components/GameLoader';
+import './styles/styles.css'; // Ajuste o caminho se necessário
 
-function App() {
+const App = () => {
+  const [games, setGames] = useState([]);
+  const [leagues, setLeagues] = useState([]);
+
+  const handleDataLoaded = (data) => {
+    setGames(data);
+    setLeagues([...new Set(data.map(game => game.League))]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <GameLoader onDataLoaded={handleDataLoaded} />
+      <GameList games={games} leagues={leagues} />
     </div>
   );
-}
+};
 
 export default App;

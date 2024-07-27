@@ -1,0 +1,89 @@
+/* src/styles/styles.css */
+
+.filter-container {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .filter-container h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .filter-group {
+    margin-bottom: 12px;
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  
+  .filter-group select,
+  .filter-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .game-list-container {
+    margin: 16px;
+  }
+  
+  .game-list {
+    margin-top: 16px;
+  }
+  
+  .game-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+  }
+  
+  .game-item h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .game-item p {
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .game-details {
+    margin-top: 12px;
+  }
+  
+  .game-details p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .game-details strong {
+    font-weight: bold;
+  }
+  
